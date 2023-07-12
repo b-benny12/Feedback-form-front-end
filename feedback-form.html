@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Guest Book</title>
+
+    <style type="text/css">
+      .formlabel {
+         font-weight:bold;
+         width: 250px;
+         margin-bottom: 12px;
+         float: left;
+         text-align: left;
+         clear: left;
+      }
+      .formfield {
+         font-weight:normal;
+         margin-bottom: 12px;
+         float: left;
+         text-align: left;
+      }
+
+      input, textarea, select {
+         border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <p>Please take a moment to fill out my feedback form</p>
+    <form name="gbForm" method="post" action="URL_to_script">
+
+    <div class="formlabel">NAME:</div>
+    <div class="formfield"><input type="text" name="name"
+       size="50" /></div>
+
+    <div class="formlabel">e-mail address</div>
+    <div class="formfield"><input type="text" name="email"
+       size="50" /></div>
+
+       <div class="formlabel">Department</div>
+        <div class="formfield">
+          <select size="3" name="sales">
+            <option value="CSE" selected="selected">CSE</option>
+            <option value="ISE">ISE</option>
+            <option value="ECE">ECE</option>
+            <option value="ETE">ETE</option>
+            <option value="Mech">Mech</option>
+            <option value="BT">BT</option>
+            <option value="AI ML">AI ML</option>
+            <option value="CS(cyber)">CS(cyber)</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Chemical  Engineering">Chemical  Engineering</option>
+          </select>
+        </div>
+    
+    <div class="formlabel"> How helpful and friendly were the event staff?</div>
+    <div class="formfield">
+       <input type="checkbox" name="website_response[]" value="Extremely helpful and friendly" />Extremely helpful and friendly<br />
+       <input type="checkbox" name="website_response[]" value="Helpful and friendly"
+        />Helpful and friendly<br />
+       <input type="checkbox" name="website_response[]" value="Neutral"
+        />Neutral<br />
+       <input type="checkbox" name="website_response[]" value="Unhelpful and unfriendly"
+        />Unhelpful and unfriendly<br />
+    </div>
+
+    <div class="formlabel">Completes syllabus of the course
+        in time</div>
+    <div class="formfield">
+       <input type="radio" name="lovebest" value="1" />1<br />
+       <input type="radio" name="lovebest" value="2" />2<br />
+       <input type="radio" name="lovebest" value="3" />3<br />
+       <input type="radio" name="lovebest" value="4" />4<br />
+    </div>
+
+
+    <div class="formlabel">The courses / syllabi taught by me
+         have a good balance between theory and application</div>
+    <div class="formfield">
+      <select name="suggestion">
+        <option value="Strongly Agree" >Strongly Agree</option>
+        <option value="Agree">Agree</option>
+        <option value="Neither Agree nor Disagree" selected="selected">Neither Agree nor
+             Disagree</option>
+             <option value="Disagree">Disagree</option>
+             <option value="Strongly Disagree">Strongly Disagree</option>
+        
+      </select>
+    </div>
+
+    <div class="formlabel">Any special Remark on curriculum</div>
+    <div class="formfield">
+      <textarea name="comments" rows="4" cols="55"></textarea>
+    </div>
+
+    <div style="float:left;">
+       <input type="submit" value="Click Here to Submit" />
+       <input type="reset" value="Erase and Start Over" />
+    </div>
+    </form>
+  </body>
+</html>
